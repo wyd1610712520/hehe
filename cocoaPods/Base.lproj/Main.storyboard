@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入网址" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7fF-cg-lil">
+                                <rect key="frame" x="51" y="20" width="368" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="k5E-Mn-nbZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bh6-Ca-sFR">
+                                <rect key="frame" x="27" y="65" width="512" height="489"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lVd-PM-BPs">
+                                <rect key="frame" x="426" y="20" width="113" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="113" id="Gly-qi-sP6"/>
+                                </constraints>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnClick:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="9Kp-zC-zYl"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="lVd-PM-BPs" firstAttribute="leading" secondItem="7fF-cg-lil" secondAttribute="trailing" constant="7" id="4h0-b8-sXF"/>
+                            <constraint firstItem="lVd-PM-BPs" firstAttribute="top" secondItem="7fF-cg-lil" secondAttribute="top" id="Iif-Bz-1Z4"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="lVd-PM-BPs" secondAttribute="trailing" constant="45" id="JQw-tS-SEj"/>
+                            <constraint firstItem="bh6-Ca-sFR" firstAttribute="top" secondItem="7fF-cg-lil" secondAttribute="bottom" constant="15" id="PSv-0R-Khn"/>
+                            <constraint firstItem="lVd-PM-BPs" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="UZl-mC-y85"/>
+                            <constraint firstItem="bh6-Ca-sFR" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="11" id="paf-kw-630"/>
+                            <constraint firstItem="7fF-cg-lil" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="35" id="qcf-hp-C43"/>
+                            <constraint firstItem="lVd-PM-BPs" firstAttribute="trailing" secondItem="bh6-Ca-sFR" secondAttribute="trailing" id="sCR-AU-F2i"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="bh6-Ca-sFR" secondAttribute="bottom" constant="46" id="vqW-L9-RwC"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="ipTextField" destination="7fF-cg-lil" id="xHf-Yl-3Ty"/>
+                        <outlet property="lab" destination="bh6-Ca-sFR" id="S3F-gb-Wjd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="315" y="367"/>
+        </scene>
+    </scenes>
+</document>
