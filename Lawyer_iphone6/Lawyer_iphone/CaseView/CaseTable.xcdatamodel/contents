@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="6254" systemVersion="13F34" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="CaseTable" syncable="YES">
+        <attribute name="ca_area_id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="ca_area_name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="ca_case_date" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="ca_case_id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="ca_case_name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="ca_category" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="ca_dept_id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="ca_dept_name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="ca_iscollect" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="ca_manager" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="ca_manager_name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="cl_client_id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="cl_client_name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="cld_empl_list" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="date" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="CaseTable" positionX="-117" positionY="-18" width="182" height="270"/>
+    </elements>
+</model>

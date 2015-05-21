@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>title</key>
+		<string>联系人信息</string>
+		<key>image</key>
+		<string>contact_logo.png</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>关联客户信息</string>
+		<key>image</key>
+		<string>contact_client_logo.png</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>相关文档信息</string>
+		<key>image</key>
+		<string>doc_logo.png</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>拜访记录</string>
+		<key>image</key>
+		<string>visit_logo.png</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>相关案件</string>
+		<key>image</key>
+		<string>relate_case_logo.png</string>
+	</dict>
+</array>
+</plist>

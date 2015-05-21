@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6250" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ModulePreviewCell" id="KGk-i7-Jjw" customClass="ModulePreviewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="process_undone_logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="FsX-4m-Yhh">
+                        <rect key="frame" x="10" y="0.0" width="15" height="15"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QG2-7P-b3h" userLabel="titleLabel">
+                        <rect key="frame" x="30" y="0.0" width="230" height="19"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="19" id="6mr-RX-WIN"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                        <color key="textColor" red="0.92941182851791382" green="0.54509806632995605" blue="0.19215688109397888" alpha="1" colorSpace="deviceRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fTj-4w-t4I" userLabel="line">
+                        <rect key="frame" x="17" y="15" width="1" height="64"/>
+                        <color key="backgroundColor" red="0.57254904510000004" green="0.58039218189999997" blue="0.59215688710000003" alpha="1" colorSpace="deviceRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="1" id="4T5-v7-QPF"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AiU-wU-1tR">
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" red="0.97647064924240112" green="0.97647064924240112" blue="0.97647064924240112" alpha="1" colorSpace="deviceRGB"/>
+                <constraints>
+                    <constraint firstItem="fTj-4w-t4I" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="17" id="3DF-q0-KER"/>
+                    <constraint firstItem="FsX-4m-Yhh" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Kwu-6B-gxn"/>
+                    <constraint firstAttribute="trailing" secondItem="AiU-wU-1tR" secondAttribute="trailing" constant="10" id="Xdo-n8-E0c"/>
+                    <constraint firstAttribute="trailing" secondItem="QG2-7P-b3h" secondAttribute="trailing" constant="60" id="Zmo-Dk-gQe"/>
+                    <constraint firstItem="QG2-7P-b3h" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="30" id="asP-FL-Ov4"/>
+                    <constraint firstItem="FsX-4m-Yhh" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="bBh-jb-gBl"/>
+                    <constraint firstItem="QG2-7P-b3h" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="bGB-De-LgR"/>
+                    <constraint firstAttribute="bottom" secondItem="fTj-4w-t4I" secondAttribute="bottom" id="flv-tY-kE6"/>
+                    <constraint firstItem="AiU-wU-1tR" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="30" id="iH6-5I-EqG"/>
+                    <constraint firstItem="AiU-wU-1tR" firstAttribute="top" secondItem="QG2-7P-b3h" secondAttribute="bottom" constant="5" id="m9F-PB-RSq"/>
+                    <constraint firstItem="fTj-4w-t4I" firstAttribute="top" secondItem="FsX-4m-Yhh" secondAttribute="bottom" id="sYr-ZQ-MFh"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="contentLabel" destination="AiU-wU-1tR" id="AKH-qw-deE"/>
+                <outlet property="nameLabel" destination="QG2-7P-b3h" id="z0P-mu-2pp"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="process_undone_logo.png" width="15" height="15"/>
+    </resources>
+</document>

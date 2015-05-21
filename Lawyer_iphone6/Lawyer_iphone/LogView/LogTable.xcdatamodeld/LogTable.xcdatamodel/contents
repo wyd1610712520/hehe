@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="6244" systemVersion="13F34" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="LogTable" syncable="YES">
+        <attribute name="ca_case_name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="cl_client_name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="date" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="record_status" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="wl_case_id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="wl_description" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="wl_empl_id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="wl_end_date" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="wl_log_id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="wl_own_hours" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="wl_start_date" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="wl_state" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="LogTable" positionX="-63" positionY="-18" width="128" height="225"/>
+    </elements>
+</model>

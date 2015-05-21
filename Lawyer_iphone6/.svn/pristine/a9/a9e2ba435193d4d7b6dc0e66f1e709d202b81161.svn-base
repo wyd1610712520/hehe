@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6250" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LawViewViewController"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="LawCell" id="KOH-eu-jBA" customClass="LawCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="45"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KOH-eu-jBA" id="5Rh-jQ-MOd">
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="SWK-JP-r4b">
+                        <rect key="frame" x="15" y="4" width="36" height="36"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="36" id="BFa-EF-0VT"/>
+                            <constraint firstAttribute="height" constant="36" id="Gzi-hQ-HKm"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="律师e通" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ICc-u5-csc">
+                        <rect key="frame" x="65" y="0.0" width="205" height="43"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="right_arrow.png" translatesAutoresizingMaskIntoConstraints="NO" id="CQI-1O-MdV">
+                        <rect key="frame" x="300" y="16" width="9" height="12"/>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Oc-lT-BhG" customClass="LineView">
+                        <rect key="frame" x="10" y="42" width="300" height="1"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="ZFP-j6-e8V"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstItem="8Oc-lT-BhG" firstAttribute="leading" secondItem="5Rh-jQ-MOd" secondAttribute="leading" constant="10" id="363-Vz-qHA"/>
+                    <constraint firstItem="ICc-u5-csc" firstAttribute="leading" secondItem="5Rh-jQ-MOd" secondAttribute="leading" constant="65" id="4Yp-ag-PpA"/>
+                    <constraint firstAttribute="trailing" secondItem="ICc-u5-csc" secondAttribute="trailing" constant="50" id="9CS-rS-45i"/>
+                    <constraint firstAttribute="centerY" secondItem="CQI-1O-MdV" secondAttribute="centerY" id="Z12-6y-cF6"/>
+                    <constraint firstItem="ICc-u5-csc" firstAttribute="top" secondItem="5Rh-jQ-MOd" secondAttribute="top" id="aHp-Ko-HoL"/>
+                    <constraint firstAttribute="centerY" secondItem="SWK-JP-r4b" secondAttribute="centerY" id="av0-Ji-tCA"/>
+                    <constraint firstAttribute="bottom" secondItem="8Oc-lT-BhG" secondAttribute="bottom" constant="1" id="eBo-90-SbA"/>
+                    <constraint firstAttribute="trailing" secondItem="8Oc-lT-BhG" secondAttribute="trailing" constant="10" id="hqT-0X-K6Q"/>
+                    <constraint firstAttribute="bottom" secondItem="ICc-u5-csc" secondAttribute="bottom" constant="1" id="j7i-yl-Pzf"/>
+                    <constraint firstAttribute="trailing" secondItem="CQI-1O-MdV" secondAttribute="trailing" constant="11" id="pdK-Pd-ve1"/>
+                    <constraint firstItem="SWK-JP-r4b" firstAttribute="leading" secondItem="5Rh-jQ-MOd" secondAttribute="leading" constant="15" id="zEK-OJ-ike"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="logoImageView" destination="SWK-JP-r4b" id="kHH-lg-cZX"/>
+                <outlet property="titleLabel" destination="ICc-u5-csc" id="zVz-yB-gJy"/>
+            </connections>
+            <point key="canvasLocation" x="188" y="313"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="right_arrow.png" width="9" height="12"/>
+    </resources>
+</document>

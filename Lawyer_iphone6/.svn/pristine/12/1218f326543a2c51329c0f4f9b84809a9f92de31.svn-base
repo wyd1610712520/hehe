@@ -1,0 +1,26 @@
+//
+//  Lawyer_Iphone-Prefix.pch
+//  Lawyer_iphone
+//
+//  Created by 邬 明 on 15-1-6.
+//  Copyright (c) 2015年 邬 明. All rights reserved.
+//
+
+#ifndef Lawyer_iphone_Lawyer_Iphone_Prefix_pch
+#define Lawyer_iphone_Lawyer_Iphone_Prefix_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#ifdef __OBJC__
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import "Utility.h"
+#import "Global.h"
+#import "UIView+Utility.h"
+#import "NSString+Utility.h"
+#import "NSDictionary+SafeObject.h"
+
+#endif
+
+#endif

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6250" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LawRuleViewController"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="LawRuleCell" id="qRJ-Jt-EN2" customClass="LawRuleCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="66"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="qRJ-Jt-EN2" id="ruv-IR-eq7">
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="law_fa_logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="yz7-g8-ZCq">
+                        <rect key="frame" x="10" y="13" width="41" height="41"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="41" id="KcK-jN-6A0"/>
+                            <constraint firstAttribute="height" constant="41" id="MM3-CP-jwd"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kRb-dz-hRo">
+                        <rect key="frame" x="61" y="13" width="218" height="39"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZX6-IH-A1u">
+                        <rect key="frame" x="61" y="17" width="30" height="20"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1B9-XO-CeM">
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="right_arrow.png" translatesAutoresizingMaskIntoConstraints="NO" id="nL5-D8-OPg">
+                        <rect key="frame" x="305" y="28" width="9" height="12"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="12" id="CbO-MJ-2DS"/>
+                            <constraint firstAttribute="width" constant="9" id="F5z-Zz-ipe"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="centerY" secondItem="nL5-D8-OPg" secondAttribute="centerY" id="4VA-jx-V2M"/>
+                    <constraint firstItem="ZX6-IH-A1u" firstAttribute="top" secondItem="kRb-dz-hRo" secondAttribute="bottom" constant="5" id="Apd-lR-R29"/>
+                    <constraint firstItem="yz7-g8-ZCq" firstAttribute="leading" secondItem="ruv-IR-eq7" secondAttribute="leading" constant="10" id="C2l-Df-2Yb"/>
+                    <constraint firstAttribute="trailing" secondItem="nL5-D8-OPg" secondAttribute="trailing" constant="6" id="HkF-cc-c9z"/>
+                    <constraint firstAttribute="centerY" secondItem="yz7-g8-ZCq" secondAttribute="centerY" id="RfV-My-RhC"/>
+                    <constraint firstItem="kRb-dz-hRo" firstAttribute="leading" secondItem="ZX6-IH-A1u" secondAttribute="leading" id="WkJ-Gr-gmr"/>
+                    <constraint firstItem="kRb-dz-hRo" firstAttribute="trailing" secondItem="1B9-XO-CeM" secondAttribute="trailing" id="bOs-Cc-6Gi"/>
+                    <constraint firstAttribute="trailing" secondItem="kRb-dz-hRo" secondAttribute="trailing" constant="41" id="c99-hD-tq8"/>
+                    <constraint firstItem="nL5-D8-OPg" firstAttribute="leading" secondItem="ruv-IR-eq7" secondAttribute="leading" constant="305" id="fAC-j5-64r"/>
+                    <constraint firstItem="kRb-dz-hRo" firstAttribute="leading" secondItem="ruv-IR-eq7" secondAttribute="leading" constant="61" id="ozM-W0-mbc"/>
+                    <constraint firstItem="kRb-dz-hRo" firstAttribute="top" secondItem="ruv-IR-eq7" secondAttribute="top" constant="12" id="pNe-rX-9UA"/>
+                    <constraint firstItem="ZX6-IH-A1u" firstAttribute="top" secondItem="1B9-XO-CeM" secondAttribute="top" id="zNm-85-PUI"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="fAC-j5-64r"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="companyLabel" destination="1B9-XO-CeM" id="ZwP-7k-5X5"/>
+                <outlet property="logoImageView" destination="yz7-g8-ZCq" id="EUZ-cb-KpK"/>
+                <outlet property="timeLabel" destination="ZX6-IH-A1u" id="ODS-r7-xgi"/>
+                <outlet property="titleLabel" destination="kRb-dz-hRo" id="1tx-Wc-F8z"/>
+            </connections>
+            <point key="canvasLocation" x="179" y="192"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="law_fa_logo.png" width="40" height="40"/>
+        <image name="right_arrow.png" width="9" height="12"/>
+    </resources>
+</document>

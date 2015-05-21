@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FileResultViewController">
+            <connections>
+                <outlet property="alertView" destination="ayf-GZ-ml3" id="14E-H5-X6r"/>
+                <outlet property="view" destination="iN0-l3-epB" id="oV7-PV-dc0"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ayf-GZ-ml3">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="25"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="所有文档" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W2X-Bx-SNF">
+                            <rect key="frame" x="13" y="0.0" width="307" height="25"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.89411771297454834" green="0.94509810209274292" blue="0.99215692281723022" alpha="1" colorSpace="deviceRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="25" id="Byk-xA-AYY"/>
+                        <constraint firstItem="W2X-Bx-SNF" firstAttribute="top" secondItem="ayf-GZ-ml3" secondAttribute="top" id="JTD-jR-K4g"/>
+                        <constraint firstAttribute="trailing" secondItem="W2X-Bx-SNF" secondAttribute="trailing" id="WKG-fR-3Bt"/>
+                        <constraint firstAttribute="bottom" secondItem="W2X-Bx-SNF" secondAttribute="bottom" id="YWl-ts-vZk"/>
+                        <constraint firstItem="W2X-Bx-SNF" firstAttribute="leading" secondItem="ayf-GZ-ml3" secondAttribute="leading" constant="13" id="b3m-p1-zWm"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="ayf-GZ-ml3" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="UN9-H2-bUh"/>
+                <constraint firstItem="ayf-GZ-ml3" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="jAS-3d-cb0"/>
+                <constraint firstAttribute="trailing" secondItem="ayf-GZ-ml3" secondAttribute="trailing" id="xbh-rq-o4e"/>
+            </constraints>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="AuditCell" id="KGk-i7-Jjw" customClass="AuditCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kx1-JW-32s">
+                        <rect key="frame" x="12" y="0.0" width="228" height="48"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="right_arrow.png" translatesAutoresizingMaskIntoConstraints="NO" id="68v-Zk-7Mu">
+                        <rect key="frame" x="301" y="18" width="9" height="12"/>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nxI-qd-TPx">
+                        <rect key="frame" x="270" y="15" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="KBs-Um-M5d"/>
+                            <constraint firstAttribute="width" constant="20" id="mLO-zQ-PSj"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                        <state key="normal" backgroundImage="yellow_btn.png">
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WAa-Qb-M5L" customClass="LineView">
+                        <rect key="frame" x="10" y="48" width="300" height="1"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="0II-yG-W3B"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="WAa-Qb-M5L" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="6g3-gQ-XSo"/>
+                    <constraint firstAttribute="trailing" secondItem="kx1-JW-32s" secondAttribute="trailing" constant="80" id="6zF-62-oCT"/>
+                    <constraint firstAttribute="bottom" secondItem="WAa-Qb-M5L" secondAttribute="bottom" id="8gu-bZ-285"/>
+                    <constraint firstAttribute="trailing" secondItem="68v-Zk-7Mu" secondAttribute="trailing" constant="10" id="Gii-dA-aTa"/>
+                    <constraint firstAttribute="bottom" secondItem="kx1-JW-32s" secondAttribute="bottom" constant="1" id="LmJ-cA-ywv"/>
+                    <constraint firstItem="kx1-JW-32s" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="TUF-Tv-zky"/>
+                    <constraint firstAttribute="centerY" secondItem="68v-Zk-7Mu" secondAttribute="centerY" id="U2g-ty-zEy"/>
+                    <constraint firstAttribute="trailing" secondItem="nxI-qd-TPx" secondAttribute="trailing" constant="30" id="a4W-dI-XJJ"/>
+                    <constraint firstItem="kx1-JW-32s" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="12" id="gn2-Kr-d7a"/>
+                    <constraint firstAttribute="trailing" secondItem="WAa-Qb-M5L" secondAttribute="trailing" constant="10" id="l69-s7-k2C"/>
+                    <constraint firstAttribute="centerY" secondItem="nxI-qd-TPx" secondAttribute="centerY" id="yG5-AQ-n3k"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="noticeButton" destination="nxI-qd-TPx" id="rkW-Vx-jfK"/>
+                <outlet property="titleLabel" destination="kx1-JW-32s" id="pMi-h6-fzh"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="right_arrow.png" width="9" height="12"/>
+        <image name="yellow_btn.png" width="19" height="19"/>
+    </resources>
+</document>
