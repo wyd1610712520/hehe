@@ -50,6 +50,7 @@
  * @param url         The url for the image.
  * @param placeholder The image to be set initially, until the image request finishes.
  * @param options     The options to use when downloading the image. @see SDWebImageOptions for the possible values.
+ 
  */
 
 - (void)sd_setImageWithURL:(NSURL *)url placeholderImage:(UIImage *)placeholder options:(SDWebImageOptions)options;
